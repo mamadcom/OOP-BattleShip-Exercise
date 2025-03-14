@@ -23,7 +23,9 @@ public class InputValidator {
                 int row = choice.charAt(0) - 'A';
                 int col = choice.charAt(1) - '0';
                 if (opponentGrid[row][col] == '*') {
+
                     System.out.println("HIT");
+                    System.out.println("As a reward, you can make another choice :");
                     opponentGrid[row][col] = 'X';
                     trackingGrid[row][col] = 'O';
                     Board.display(trackingGrid);
