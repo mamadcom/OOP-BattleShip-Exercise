@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class InputValidator {
     public static boolean validateInput(String input) {
-        if (input.length() != 2) return false;
+        if (input.length() != 2) return  false;
         char row = input.charAt(0);
         int cool;
         if (!Character.isDigit(input.charAt(1))) return false;
